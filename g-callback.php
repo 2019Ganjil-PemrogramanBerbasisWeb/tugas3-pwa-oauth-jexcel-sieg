@@ -16,10 +16,10 @@ $userData = $oAuth->userinfo_v2_me->get();
 // echo "<pre>";
 // var_dump($userData);
 
- $_SESSION['nama'] = $userData['name'];
-  $_SESSION['gambar'] = $userData['picture'];
-  $_SESSION['email'] = $userData['email'];
- header('Location: index.php');
+$_SESSION['nama'] = $userData['name'];
+$_SESSION['gambar'] = $userData['picture'];
+$_SESSION['email'] = $userData['email'];
+header('Location: index.php');
 exit();
 
 
